@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{979E3B8B-BF55-4461-9E64-92F7A0B38CDA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NodaTime">
+      <HintPath>..\packages\NodaTime.1.3.2\lib\net35-Client\NodaTime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACC\Li_MRSheet.cs" />
+    <Compile Include="ACC\Li_MRSheetDetail.cs" />
+    <Compile Include="BookEdition.cs" />
+    <Compile Include="HR\Li_ApprisalCycle.cs" />
+    <Compile Include="HR\Li_ApprisalDetail.cs" />
+    <Compile Include="HR\Li_ApprisalExecution.cs" />
+    <Compile Include="HR\Li_ApprisalResult.cs" />
+    <Compile Include="HR\Li_AssetBrand.cs" />
+    <Compile Include="HR\Li_AssetCategory.cs" />
+    <Compile Include="HR\Li_AssetDelivery.cs" />
+    <Compile Include="HR\Li_AssetList.cs" />
+    <Compile Include="HR\Li_AssetReturn.cs" />
+    <Compile Include="HR\li_AssetTransfer.cs" />
+    <Compile Include="HR\Li_AssetVendor.cs" />
+    <Compile Include="HR\Li_AttnPolicy.cs" />
+    <Compile Include="HR\Li_BloodGroup.cs" />
+    <Compile Include="HR\Li_Competency.cs" />
+    <Compile Include="HR\Li_CompetencyMap.cs" />
+    <Compile Include="HR\Li_CouResPerson.cs" />
+    <Compile Include="HR\Li_Course.cs" />
+    <Compile Include="HR\Li_CourseOutline.cs" />
+    <Compile Include="HR\Li_CvBank.cs" />
+    <Compile Include="HR\Li_Department.cs" />
+    <Compile Include="HR\Li_Dependent.cs" />
+    <Compile Include="HR\Li_DescriptiveQuestion.cs" />
+    <Compile Include="HR\Li_DescriptiveTestDetail.cs" />
+    <Compile Include="HR\Li_Designation.cs" />
+    <Compile Include="HR\Li_DisciplinaryAction.cs" />
+    <Compile Include="HR\Li_EducationLevel.cs" />
+    <Compile Include="HR\Li_EduResult.cs" />
+    <Compile Include="HR\Li_EmpAssetGiven.cs" />
+    <Compile Include="HR\Li_EmpClearance.cs" />
+    <Compile Include="HR\Li_EmpClearanceDetail.cs" />
+    <Compile Include="HR\Li_EmpEducation.cs" />
+    <Compile Include="HR\Li_EmpIncrePromoTran.cs" />
+    <Compile Include="HR\Li_EmpLanguage.cs" />
+    <Compile Include="HR\Li_EmpLeaveApplicaton.cs" />
+    <Compile Include="HR\Li_EmpLeaveStatus.cs" />
+    <Compile Include="HR\Li_EmployeeInfo.cs" />
+    <Compile Include="HR\Li_Employment.cs" />
+    <Compile Include="HR\Li_EmploymentStatus.cs" />
+    <Compile Include="HR\Li_EmpMembership.cs" />
+    <Compile Include="HR\Li_EmpNotDetail.cs" />
+    <Compile Include="HR\Li_EmpNotifications.cs" />
+    <Compile Include="HR\Li_EmpPassportVisa.cs" />
+    <Compile Include="HR\Li_EmpPayDay.cs" />
+    <Compile Include="HR\Li_EmpPayDayDetail.cs" />
+    <Compile Include="HR\Li_EmpProfessionalCertif.cs" />
+    <Compile Include="HR\Li_EmpSalary.cs" />
+    <Compile Include="HR\Li_EmpSalaryDetail.cs" />
+    <Compile Include="HR\Li_EmpShiftMap.cs" />
+    <Compile Include="HR\Li_EmpSkills.cs" />
+    <Compile Include="HR\Li_EmpTraining.cs" />
+    <Compile Include="HR\Li_ExamTitle.cs" />
+    <Compile Include="HR\Li_FinalSettlement.cs" />
+    <Compile Include="HR\Li_Gender.cs" />
+    <Compile Include="HR\Li_Goal.cs" />
+    <Compile Include="HR\Li_GoalDetail.cs" />
+    <Compile Include="HR\Li_Holiday.cs" />
+    <Compile Include="HR\Li_HRAnnounce.cs" />
+    <Compile Include="HR\Li_HRAnnounceDetail.cs" />
+    <Compile Include="HR\Li_InfoStatus.cs" />
+    <Compile Include="HR\Li_InterviewSchdule.cs" />
+    <Compile Include="HR\Li_InterviewTemplate.cs" />
+    <Compile Include="HR\Li_InterviewType.cs" />
+    <Compile Include="HR\Li_IntTest.cs" />
+    <Compile Include="HR\Li_JobCategory.cs" />
+    <Compile Include="HR\Li_JobDesBenefit.cs" />
+    <Compile Include="HR\Li_JobDescription.cs" />
+    <Compile Include="HR\Li_JobDesEducationalReq.cs" />
+    <Compile Include="HR\Li_JobDesExperienceReq.cs" />
+    <Compile Include="HR\Li_JobDesReponsibility.cs" />
+    <Compile Include="HR\Li_JobDesRequirment.cs" />
+    <Compile Include="HR\Li_JobLocation.cs" />
+    <Compile Include="HR\Li_JobTask.cs" />
+    <Compile Include="HR\Li_JobTaskMap.cs" />
+    <Compile Include="HR\Li_JobTitle.cs" />
+    <Compile Include="HR\Li_LeaveApproval.cs" />
+    <Compile Include="HR\Li_LeavePeriod.cs" />
+    <Compile Include="HR\Li_LeaveRule.cs" />
+    <Compile Include="HR\Li_LeaveType.cs" />
+    <Compile Include="HR\Li_LeaveTypeRule.cs" />
+    <Compile Include="HR\Li_LetterTemplate.cs" />
+    <Compile Include="HR\Li_LoanAdvance.cs" />
+    <Compile Include="HR\Li_LoanAdvanceDetail.cs" />
+    <Compile Include="HR\Li_MaritalStatus.cs" />
+    <Compile Include="HR\Li_McqQuestion.cs" />
+    <Compile Include="HR\Li_MCQTestDetail.cs" />
+    <Compile Include="HR\Li_MCQuesAnwer.cs" />
+    <Compile Include="HR\Li_MonthlyPayDay.cs" />
+    <Compile Include="HR\Li_Nationality.cs" />
+    <Compile Include="HR\Li_OffSchedule.cs" />
+    <Compile Include="HR\Li_OffShift.cs" />
+    <Compile Include="HR\Li_Organogram.cs" />
+    <Compile Include="HR\Li_PayGrade.cs" />
+    <Compile Include="HR\Li_PayHead.cs" />
+    <Compile Include="HR\Li_PayScale.cs" />
+    <Compile Include="HR\Li_PayScaleDetail.cs" />
+    <Compile Include="HR\Li_PFApplication.cs" />
+    <Compile Include="HR\Li_PFContribution.cs" />
+    <Compile Include="HR\Li_PFDistribution.cs" />
+    <Compile Include="HR\Li_PFNominee.cs" />
+    <Compile Include="HR\Li_PFProfitDistribution.cs" />
+    <Compile Include="HR\Li_PFProfitDistributionDetail.cs" />
+    <Compile Include="HR\Li_PFProjectRule.cs" />
+    <Compile Include="HR\Li_PFProjectTran.cs" />
+    <Compile Include="HR\Li_PFRule.cs" />
+    <Compile Include="HR\Li_ProvidentFund.cs" />
+    <Compile Include="HR\Li_ProvidentFundDetail.cs" />
+    <Compile Include="HR\Li_QuestionTemplate.cs" />
+    <Compile Include="HR\Li_Religion.cs" />
+    <Compile Include="HR\Li_ResourcePerSkill.cs" />
+    <Compile Include="HR\Li_Salary.cs" />
+    <Compile Include="HR\Li_SalaryDetail.cs" />
+    <Compile Include="HR\Li_SalaryPayDetail.cs" />
+    <Compile Include="HR\Li_Section.cs" />
+    <Compile Include="HR\Li_TermReason.cs" />
+    <Compile Include="HR\Li_TrainApplication.cs" />
+    <Compile Include="HR\Li_TrainingApproval.cs" />
+    <Compile Include="HR\Li_TrainingBenefit.cs" />
+    <Compile Include="HR\Li_TrainInstitute.cs" />
+    <Compile Include="HR\Li_TraningFeedBack.cs" />
+    <Compile Include="HR\Li_VacancyAnounce.cs" />
+    <Compile Include="HR\Li_VacancyFor.cs" />
+    <Compile Include="HR\Li_VacancyReqApproval.cs" />
+    <Compile Include="HR\Li_VacancyRequisition.cs" />
+    <Compile Include="HR\Li_VacancyTemplate.cs" />
+    <Compile Include="HR\Li_Weekend.cs" />
+    <Compile Include="HR\Li_WorkShift.cs" />
+    <Compile Include="Li_AdminUser.cs" />
+    <Compile Include="li_BookGroupStock.cs" />
+    <Compile Include="Li_ManagementSummary.cs" />
+    <Compile Include="Li_TargetDetails.cs" />
+    <Compile Include="Marketing\li_AgentStock.cs" />
+    <Compile Include="Marketing\li_Author.cs" />
+    <Compile Include="Marketing\li_DonInformar.cs" />
+    <Compile Include="Marketing\li_DonPrimaryObservation.cs" />
+    <Compile Include="Marketing\li_LibraryWiseAssociate.cs" />
+    <Compile Include="Marketing\li_LibraryWiseBankInformation.cs" />
+    <Compile Include="Marketing\li_LibraryWiseOrganizationInformation.cs" />
+    <Compile Include="Marketing\Li_MadrasahInfoAdvanced.cs" />
+    <Compile Include="Marketing\li_Organization.cs" />
+    <Compile Include="Marketing\Li_StudentAdvanced.cs" />
+    <Compile Include="Marketing\Li_TeacherNoAdvanced.cs" />
+    <Compile Include="Production\li_LemiSizeBasic.cs" />
+    <Compile Include="li_UserAccessLog.cs" />
+    <Compile Include="Marketing\Li_DepositFor.cs" />
+    <Compile Include="Marketing\Li_DonBasicLetter.cs" />
+    <Compile Include="Marketing\Li_DonLetter.cs" />
+    <Compile Include="li_Edition.cs" />
+    <Compile Include="li_LibraryInformation.cs" />
+    <Compile Include="li_LibraryOwner.cs" />
+    <Compile Include="Marketing\BookInformation.cs" />
+    <Compile Include="Marketing\BookVersionInfo.cs" />
+    <Compile Include="Marketing\DemLocation.cs" />
+    <Compile Include="Marketing\LibraryInformation.cs" />
+    <Compile Include="Marketing\li_AdjustChalan.cs" />
+    <Compile Include="Marketing\li_AdjustChalan_Datail.cs" />
+    <Compile Include="Marketing\Li_AgentQawmiMadrasah.cs" />
+    <Compile Include="Marketing\li_Area.cs" />
+    <Compile Include="Marketing\Li_BankName.cs" />
+    <Compile Include="Marketing\Li_BoardQawmiMadrasah.cs" />
+    <Compile Include="Marketing\li_BookGroup.cs" />
+    <Compile Include="Marketing\li_BookInformation.cs" />
+    <Compile Include="Marketing\li_BookReplacement.cs" />
+    <Compile Include="Marketing\li_BookReplacementDetail.cs" />
+    <Compile Include="Marketing\li_BookTarget.cs" />
+    <Compile Include="Marketing\li_BookType.cs" />
+    <Compile Include="Marketing\li_BookVersionInfo.cs" />
+    <Compile Include="Marketing\Li_CashLibrary.cs" />
+    <Compile Include="Marketing\li_Category.cs" />
+    <Compile Include="Marketing\li_CatWiseChalan.cs" />
+    <Compile Include="Marketing\li_ChalanDelivery.cs" />
+    <Compile Include="Marketing\li_Challan.cs" />
+    <Compile Include="Marketing\li_ChallanDetails.cs" />
+    <Compile Include="Marketing\li_ChoatParty.cs" />
+    <Compile Include="Marketing\li_Classes.cs" />
+    <Compile Include="Marketing\Li_Company.cs" />
+    <Compile Include="Marketing\Li_Dam_Oth_Party.cs" />
+    <Compile Include="Marketing\Li_Dam_Party.cs" />
+    <Compile Include="Marketing\Li_Demercation.cs" />
+    <Compile Include="Marketing\li_Deposit.cs" />
+    <Compile Include="Marketing\li_DepositInformation.cs" />
+    <Compile Include="Marketing\li_District.cs" />
+    <Compile Include="Marketing\li_Division.cs" />
+    <Compile Include="Marketing\Li_DonationAmt.cs" />
+    <Compile Include="Marketing\Li_DonationBasic.cs" />
+    <Compile Include="Marketing\Li_DonationDes.cs" />
+    <Compile Include="Marketing\Li_DonationDetail.cs" />
+    <Compile Include="Marketing\Li_DonationFor.cs" />
+    <Compile Include="Marketing\Li_DonLetterPayment.cs" />
+    <Compile Include="Marketing\Li_DonPayment.cs" />
+    <Compile Include="Marketing\li_DonPaymentReturn.cs" />
+    <Compile Include="Marketing\Li_DonPaymentShedule.cs" />
+    <Compile Include="Marketing\Li_DonPayType.cs" />
+    <Compile Include="Marketing\Li_DonYear.cs" />
+    <Compile Include="Marketing\Li_HouseRent_Party.cs" />
+    <Compile Include="Marketing\li_Int_From.cs" />
+    <Compile Include="Marketing\li_Int_From_Datail.cs" />
+    <Compile Include="Marketing\li_Int_To.cs" />
+    <Compile Include="Marketing\li_Int_To_Detail.cs" />
+    <Compile Include="Marketing\Li_Level.cs" />
+    <Compile Include="Marketing\li_LibraryInformation.cs" />
+    <Compile Include="Marketing\li_MadrasahEntry.cs" />
+    <Compile Include="Marketing\Li_MadrasahInfo.cs" />
+    <Compile Include="Marketing\Li_MadrasahQawmi.cs" />
+    <Compile Include="Marketing\Li_MadrasahQStudent.cs" />
+    <Compile Include="Marketing\li_PacketBill.cs" />
+    <Compile Include="Marketing\li_Payment.cs" />
+    <Compile Include="Marketing\li_PktCheckedBy.cs" />
+    <Compile Include="Marketing\li_PktPacketBy.cs" />
+    <Compile Include="Marketing\li_PktReceivedBy.cs" />
+    <Compile Include="Marketing\Li_PlateBill.cs" />
+    <Compile Include="Marketing\Li_PlateBillDetail.cs" />
+    <Compile Include="Marketing\Li_Points.cs" />
+    <Compile Include="Marketing\li_PolithinParty.cs" />
+    <Compile Include="Marketing\Li_PrintReq.cs" />
+    <Compile Include="Marketing\Li_PrintReqApplied.cs" />
+    <Compile Include="Marketing\Li_PrintReq_Cur.cs" />
+    <Compile Include="Marketing\Li_PrintReq_Last.cs" />
+    <Compile Include="Marketing\li_ReceiveChoat.cs" />
+    <Compile Include="Marketing\li_ReceivePolithin.cs" />
+    <Compile Include="Marketing\li_ReceiveSutli.cs" />
+    <Compile Include="Marketing\li_Region.cs" />
+    <Compile Include="Marketing\li_Return.cs" />
+    <Compile Include="Marketing\li_ReturnDetails.cs" />
+    <Compile Include="Marketing\Li_RotePlan.cs" />
+    <Compile Include="Marketing\Li_RoutePlanDetails.cs" />
+    <Compile Include="Marketing\li_SalesPerson.cs" />
+    <Compile Include="Marketing\li_SendForDamage.cs" />
+    <Compile Include="Marketing\li_SendForDamageDetail.cs" />
+    <Compile Include="Marketing\li_SendForRebind.cs" />
+    <Compile Include="Marketing\li_SendForRebindDetail.cs" />
+    <Compile Include="Marketing\Li_SpecimenAdjLetter.cs" />
+    <Compile Include="Marketing\Li_SpecimenAdjLetterDetail.cs" />
+    <Compile Include="Marketing\li_SpecimenChalan.cs" />
+    <Compile Include="Marketing\li_SpecimenChalan_Detail.cs" />
+    <Compile Include="Marketing\li_Specimen_Return.cs" />
+    <Compile Include="Marketing\Li_Specimen_ReturnDetail.cs" />
+    <Compile Include="Marketing\li_Stock.cs" />
+    <Compile Include="Marketing\li_StockDetails.cs" />
+    <Compile Include="Marketing\Li_StudentR2.cs" />
+    <Compile Include="Marketing\li_SutliParty.cs" />
+    <Compile Include="Marketing\Li_TeacherInfo.cs" />
+    <Compile Include="Marketing\li_TempPricingBookPrint.cs" />
+    <Compile Include="Marketing\li_Teritory.cs" />
+    <Compile Include="Marketing\li_TeritoryBudgetTransfer.cs" />
+    <Compile Include="Marketing\li_Thana.cs" />
+    <Compile Include="Marketing\li_TranferMainToReturn.cs" />
+    <Compile Include="Marketing\li_TranferMainToReturnDetail.cs" />
+    <Compile Include="Marketing\li_TranferReturnToMain.cs" />
+    <Compile Include="Marketing\li_TranferReturnToMainDetail.cs" />
+    <Compile Include="Marketing\li_TransectionType.cs" />
+    <Compile Include="Marketing\li_TransportInfo.cs" />
+    <Compile Include="Marketing\li_Zone.cs" />
+    <Compile Include="Marketing\TSoInformation.cs" />
+    <Compile Include="MIS\li_Form.cs" />
+    <Compile Include="MIS\li_UserAccess.cs" />
+    <Compile Include="Production\Li_BinderBill.cs" />
+    <Compile Include="Production\Li_BinderBillDetail.cs" />
+    <Compile Include="Production\Li_BinderReturn.cs" />
+    <Compile Include="Production\Li_BinderReturnDetail.cs" />
+    <Compile Include="Production\li_BindOrder.cs" />
+    <Compile Include="Production\li_BookBinderInfo.cs" />
+    <Compile Include="Production\li_BookCoverSupInfo.cs" />
+    <Compile Include="Production\li_BookDeliveryDetail.cs" />
+    <Compile Include="Production\li_BookDeliveryToBinder.cs" />
+    <Compile Include="Production\li_BookPricing.cs" />
+    <Compile Include="Production\li_BookPricingOutput.cs" />
+    <Compile Include="Production\li_BookProductionCost.cs" />
+    <Compile Include="Production\li_BookProductionDetails.cs" />
+    <Compile Include="Production\li_BookRecFrBinder.cs" />
+    <Compile Include="Production\li_BookSizeBasic.cs" />
+    <Compile Include="Production\Li_Book_Part.cs" />
+    <Compile Include="Production\Li_CoverBill.cs" />
+    <Compile Include="Production\Li_CoverBillDetail.cs" />
+    <Compile Include="Production\li_GodownReceive.cs" />
+    <Compile Include="Production\li_GodownReceiveChoat.cs" />
+    <Compile Include="Production\li_GodownReceiveSutli.cs" />
+    <Compile Include="Production\li_GodownReceive_Cover.cs" />
+    <Compile Include="Production\li_InnerFormaPrinting.cs" />
+    <Compile Include="Production\li_LaminationTypeBasic.cs" />
+    <Compile Include="Production\Li_LemiChallan.cs" />
+    <Compile Include="Production\Li_LemiChallanDetail.cs" />
+    <Compile Include="Production\Li_LeminationOrder.cs" />
+    <Compile Include="Production\li_LeminationOrderDetail.cs" />
+    <Compile Include="Production\Li_LeminationOrderPrint.cs" />
+    <Compile Include="Production\li_LeminationOrderPrintDetail.cs" />
+    <Compile Include="Production\li_LeminatioPartyInfo.cs" />
+    <Compile Include="Production\li_Overhead.cs" />
+    <Compile Include="Production\Li_PaperAcUsed.cs" />
+    <Compile Include="Production\Li_PaperAcUsedDetail.cs" />
+    <Compile Include="Production\li_PaperBrandBasic.cs" />
+    <Compile Include="Production\li_PaperOriginBasic.cs" />
+    <Compile Include="Production\li_PaperParty.cs" />
+    <Compile Include="Production\li_PaperPhurchase.cs" />
+    <Compile Include="Production\Li_PaperReturn.cs" />
+    <Compile Include="Production\Li_PaperReturnDetails.cs" />
+    <Compile Include="Production\li_PaperSizeBasic.cs" />
+    <Compile Include="Production\li_PaperTransfer.cs" />
+    <Compile Include="Production\li_PaperTransferDetail.cs" />
+    <Compile Include="Production\li_PaperTypeBasic.cs" />
+    <Compile Include="Production\li_PaperWeightBasic.cs" />
+    <Compile Include="Production\Li_Paper_Delivery.cs" />
+    <Compile Include="Production\li_Paper_Delivery_Detail.cs" />
+    <Compile Include="Production\li_Paper_M_U.cs" />
+    <Compile Include="Production\Li_Pesting.cs" />
+    <Compile Include="Production\li_PestingBasic.cs" />
+    <Compile Include="Production\li_PestingPartyInfo.cs" />
+    <Compile Include="Production\Li_Pesting_Forma.cs" />
+    <Compile Include="Production\Li_Pesting_Inner.cs" />
+    <Compile Include="Production\Li_Pesting_Page.cs" />
+    <Compile Include="Production\Li_Pesting_Postani.cs" />
+    <Compile Include="Production\li_PlateBrandBasic.cs" />
+    <Compile Include="Production\li_PlateBuyerInfo.cs" />
+    <Compile Include="Production\Li_PlateDamage.cs" />
+    <Compile Include="Production\Li_PlateDamageDetail.cs" />
+    <Compile Include="Production\Li_PlateProcess.cs" />
+    <Compile Include="Production\Li_PlateProcessDetail.cs" />
+    <Compile Include="Production\li_PlateProcessParty.cs" />
+    <Compile Include="Production\Li_PlatePurchase.cs" />
+    <Compile Include="Production\Li_PlatePurchaseDetail.cs" />
+    <Compile Include="Production\Li_PlateReturnTransfer.cs" />
+    <Compile Include="Production\Li_PlateReturnTransferDetail.cs" />
+    <Compile Include="Production\li_PlateSizeBasic.cs" />
+    <Compile Include="Production\Li_PlateSupply.cs" />
+    <Compile Include="Production\Li_PlateSupply_Forma.cs" />
+    <Compile Include="Production\Li_PlateSupply_FormaDetail.cs" />
+    <Compile Include="Production\Li_PlateSupply_Type.cs" />
+    <Compile Include="Production\Li_PlateTransfer.cs" />
+    <Compile Include="Production\li_PlateTransferDetail.cs" />
+    <Compile Include="Production\li_PlateTypeBasic.cs" />
+    <Compile Include="Production\li_PressInfo.cs" />
+    <Compile Include="Production\Li_PrintBill.cs" />
+    <Compile Include="Production\Li_PrintBillDetail.cs" />
+    <Compile Include="Production\Li_PrintBillDetail_Plate.cs" />
+    <Compile Include="Production\Li_PrintOrderBasic.cs" />
+    <Compile Include="Production\Li_Print_Order_Cover.cs" />
+    <Compile Include="Production\Li_Print_Order_CoverDetails.cs" />
+    <Compile Include="Production\Li_Print_Order_Forma.cs" />
+    <Compile Include="Production\Li_Print_Order_FormaDetails.cs" />
+    <Compile Include="Production\Li_ProcessBill.cs" />
+    <Compile Include="Production\Li_ProcessBillDetail.cs" />
+    <Compile Include="Production\li_ProductionBookDetails.cs" />
+    <Compile Include="Production\li_ProductionCoverPaper.cs" />
+    <Compile Include="Production\li_ProductionFormaPaper.cs" />
+    <Compile Include="Production\li_ProductionInnerPaper.cs" />
+    <Compile Include="Production\li_PromotionalItemBasic.cs" />
+    <Compile Include="Production\SutrapurLamiItemChallan.cs" />
+    <Compile Include="Production\SutrapurLamiItemChallanDetails.cs" />
+    <Compile Include="Production\SutrapurLamination.cs" />
+    <Compile Include="Production\SutrapurLaminationDetails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R&amp;D\Li_AddTask.cs" />
+    <Compile Include="R&amp;D\li_Author.cs" />
+    <Compile Include="R&amp;D\Li_BookInfo_Section.cs" />
+    <Compile Include="R&amp;D\Li_Book_G.cs" />
+    <Compile Include="R&amp;D\Li_Book_Session.cs" />
+    <Compile Include="R&amp;D\li_DesignationR.cs" />
+    <Compile Include="R&amp;D\li_Employee.cs" />
+    <Compile Include="R&amp;D\li_RNDPlan_Section.cs" />
+    <Compile Include="R&amp;D\Li_RnDQawmiWorkOrderDetails.cs" />
+    <Compile Include="R&amp;D\li_RnDWorkDetails.cs" />
+    <Compile Include="R&amp;D\Li_RnDWorkOrderDetails.cs" />
+    <Compile Include="R&amp;D\Li_RND_Plan.cs" />
+    <Compile Include="R&amp;D\Li_RND_Plan_Detail.cs" />
+    <Compile Include="R&amp;D\li_ScriptBook.cs" />
+    <Compile Include="R&amp;D\li_Script_Chapter.cs" />
+    <Compile Include="R&amp;D\li_Script_Derection.cs" />
+    <Compile Include="R&amp;D\Li_Task.cs" />
+    <Compile Include="R&amp;D\li_WorkTypeRND.cs" />
+    <Compile Include="R&amp;D\li_WorkTypeRNDComputer.cs" />
+    <Compile Include="R&amp;D\WorkPlan.cs" />
+    <Compile Include="Store\Li_StockAdjustment.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

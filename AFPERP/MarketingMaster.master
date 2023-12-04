@@ -1,0 +1,796 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MarketingMaster.master.cs" Inherits="BLL.Marketing.MarketingMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SidebarContent" runat="server">
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="MarketingHome">
+                        <i class="icon-dashboard"></i>
+                        <span>Marketing Dashboard</span>
+                    </a>
+                </li>
+                <!--Report menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Reports</span>
+                    </a>
+                    <ul class="sub">
+
+
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Chalan</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentStatement">Agent Statement</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Rpt_AgentWiseTransaction">Cash Agent Statement</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Rpt_QCashAgentWiseTransaction.aspx">QCash Agent Statement</a>
+                                </li>                          
+                                <li class="sub-menu">
+                                    <a href="Mkt_CashMemoPrint">Cash Memo View</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_QCashMemoPrint">QCash Memo View</a>
+                                </li>
+                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentBooksChallan">Agent Books Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TerritoryWiseBooksChallan">Territory Books Challan</a>
+                                </li> 
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_QcashmadrasahLibraryTransaction">QC Madrasah Transaction</a>
+                                </li>                                                               
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BookChallanDetail">Book  Detail challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_LibraryBookChallanDetail">Library Wise Book Challan Qty </a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ChalanByMemoNo">Memo View Alia</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ChalanMemoQawmi">Memo View Qawmi </a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseChallanMemo">Datewise Challan Memo</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseBookChallan">Datewise Book Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BookwiseMonthlySales">Monthly Book Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TargetVsAchievement">Target vs Achievement</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BonusStatement">Bonus Statement</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_CashAgentBonus">Cash Bonus Statement </a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_QCashAgentBonus">QCash Bonus Statement </a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseInternalTransfer">Datewise Internal Transfer</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_InternalTransferMemo">Internal Transfer Memo</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptLibraryWiseBookQty">Library Wise Book Qty</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+
+
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Deposit</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DepositeReport">Deposit Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseDeposite">Datewise Deposit</a>
+                                </li>
+                                <li>
+                                    <a href="Mkt_DatewiseCashDeposit">Datewise Cash Deposit</a>
+                                </li>
+                                <li>
+                                    <a href="Mkt_RptTerritoryWiseBoishakhiTargetVsDeposit">Target VS Deposit(N28)</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Return</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseReturn">Datewise Return</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseBooksReturn">Datewise Books Return</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ReturnByMemoNo.aspx">Return Books By Memo No</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ReturnByMemoQaumi.aspx">Return Qawmi Books By Memo</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptCashReturn.aspx">Cash Return By Memo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Specimen</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TSOFinalSettlement">TSO Final Settlement</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanAdjustmentMemo.aspx">Specimen Adjust Memo</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanReturnMemo.aspx">Specimen Return Memo</a>
+                                </li>
+                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TsowiseTransaction">TSO Statement</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanChallanByBookId">Bookwise Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TsowiseChallanQty">Tsowise Challan Qty</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanSummary">Specimen Summary</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TSOSummary">TSO Summary</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TsowiseChallanAdjustmentDue">Bookwise Chln & Adj</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseSpecimanChallan">Datewise Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseSpecimanReturn">Datewise Return</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="SpecimenAdjustmentLetter">Specimen Adjustment Letter</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseSpecimenAdjustmentLetter">Datewise Adjustment Letter</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanMemo.aspx">Specimen Challan Memo</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanInternalTransfer.aspx">Specimen Internal Memo</a>
+                                </li>
+                                
+
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Stock</span>
+                            </a>
+                            <ul class="sub">
+                                <%--<li class="sub-menu">
+                                    <a href="Mkt_Rpt_StockSummary">Stock Summary</a>
+                                </li>--%>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_StockDetails.aspx">Books Stock Details</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Store_Rpt_CentralStockInventory.aspx">Central Stock Inventory</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_StockReturnDetails.aspx">Return Stock Details</a>
+                                </li>
+                                <%-- <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseInventory.aspx">Datewise Inventory</a>
+                                </li>--%>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Book</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BookList.aspx">Book List</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BookPriceList.aspx">Book Price List</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptProposalForNewEdition.aspx">Proposal For New Edition </a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PrintRequisitionWithGodownRec">PrintReqWithGodownRec</a>
+                                </li>
+                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseBookStockQty">Available Book Stock</a>
+                                </li>
+                                                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_PrintOrderRequisition">Datewise Print Req</a>
+                                </li>
+                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptDatewiseBookWisePrintReqVSReceived">Print Req Vs GodownRcv</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Madrasah</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptMadrasahListByDem">Madrasah List</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptMadrashaInfoByTeritory">Madrasha Info</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DonationLetter">Donation Letter</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptMadrashaDonationSummary">Donation Summary</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseDonationLetterPayment">DateWise Payment</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgreementDetailsReport">Agreement Details</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DonationBudgetSummary">Donation Budget</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptMadrashaStudentInformation">Student Info</a>
+                                </li>                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TeacherList">Teacher List</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Envelop Print</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_PrintAgentEnvelop.aspx">Agent Envelop</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_TsoEnvelop.aspx">TSO Envelop</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Packet Booking</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewisePacketBill"> Datewise Packet Bill</a>
+                                </li>                            
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Management</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_COOFieldForceReport">Field Force Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SalesTerget20212022">Target 2022-2023</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_RptMonthwiseTarget">Monthwise Target</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Others</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ProjectwistComprisn.aspx">New Comparison Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ComparisonReport2020.aspx">last Three Year Comparison Report</a>
+                                </li>
+                               
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentSummary">Whole Year Summary</a>
+                                </li>
+                               <%--<li class="sub-menu">
+                                    <a href="Mkt_ThreeYearSalesComp.aspx">Three Years Sales Comparison Report</a>
+                                </li>--%>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentSummaryWithCash">Cash Whole Year Summary</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BoisakhiOfferReport">Boisakhi Details</a>
+                                </li>
+                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SalesTarget">Sales Target</a>
+                                </li>
+                                <%--<li class="sub-menu">
+                                    <a href="Mkt_Rpt_AlimOfferReport">Alim Details </a>
+                                </li>--%>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ComparisonReport">Comparison Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ThreeYearsComparisonReport">3 Years Comparison Report</a>
+                                </li>
+                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ThreeEditionComparisonReport">3 Edition Comparison Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_CashAndCreditComparison">Cash Credit Comparison Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_RevenueComparisonReport">Revenue Comparison Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ProjectwiseSalesQtyComparison">Project Wise Comparison</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentPayment">Credit Payment Summary</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentPaymentCashParty">Cash Payment Summary</a>
+                                </li>
+                                
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AlimIncentive">Alim Incentive</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_IncentiveReport1stAnd2ndStep">Incentive 1st and 2nd step</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentList">Agent List</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_CashAgentList">Cash Agent List</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TSOList">TSO List</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_RRNoReport">Packet Booking Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_MadrashaInfoById">MadrashaInfo Old</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_RoutePlan">Route Plan</a>
+                                </li>
+<%--                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SalesTerget2020">Projectwise Target</a>
+                                </li>--%>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SalesTerget20212022">Target 2022-2023</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_rptGrammerSalesComparison.aspx">Grammer Series Comparison</a>
+                                </li>                                                         
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!--Report menu end-->
+
+                <!--Library Information menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Library Information</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="MktNewLibrary">New Library</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_TeacherInfo">Teacher Information</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_AgentStockEntry">Agent Stock Entry</a>
+                        </li>
+
+                        <!--
+                        <li class="sub-menu">
+                            <a href="MktNewLibraryOwner">New Library Owner</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktLibraryOpeningBalance">Library Opening Balance</a>
+                        </li>
+
+                         -->
+                        <li class="sub-menu">
+                            <a href="MktTso">TSO</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <!--Library Information menu End-->
+
+
+
+                <!--Book Information menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Book Information</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="MktAddNewBook">New Book</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktNewBookCode">New Book Code</a>
+                        </li>
+                        <!--
+                        <li class="sub-menu">
+                            <a href="MktAuthor">Author</a>
+                        </li>
+                         -->
+                        <li class="sub-menu">
+                            <a href="MktTsoWiseBookTarget">TSO Wise Book Target</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktPrintRequisition">Print Requisition</a>
+                        </li>
+                        <%-- <li class="sub-menu">
+                            <a href="#">Book Pricing</a>
+                        </li>--%>
+                        <li class="sub-menu">
+                            <a href="MktBookCode">Book Code</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Book Information menu End-->
+                <!--Collection menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Collection</span>
+                    </a>
+                    <ul class="sub">
+
+                        <li class="sub-menu">
+                            <a href="MktPayment">Credit Party Payment</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="MktCashPayment">Cash Party Payment</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_DatewiseMRSheet">Datewise MRSheet</a>
+                        </li>
+
+
+
+                    </ul>
+                </li>
+                <!--Collection menu End-->
+                <!--Return menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Returns</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="MktReturnBooks">Return Books</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktViewAllReturn">View All Return</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Return menu End-->
+
+                <!--Challan menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Challan</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="MktNewChalan">New Challan</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_ViewAllChallan">View All Challan</a>
+                        </li>
+                        <%-- <li class="sub-menu">
+                            <a href="Mkt_BoishakhiOffer">Boishaki Offer</a>
+                        </li>--%>
+                        <%-- <li class="sub-menu">
+                            <a href="Mkt_PackingCost">Daily Packing Cost</a>
+                        </li>--%>
+                        <%-- <li class="sub-menu">
+                            <a href="Mkt_ChalanDelivery">Chalan Delivery</a>
+                        </li>--%>
+                        
+                         <li class="sub-menu">
+                            <a href="Mkt_UpdateChallanQty">Update Challan</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_ChalanInternalTransfer">Internal Transfer</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_AdjustmentChalan">Adjustment Challan</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktChalanQawmi">Challan Qawmi</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_InvoiceSummary">Invoice Summary</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Challan menu End-->
+
+                <!--Madrasah menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Madrasah</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <%--<a href="Mkt_MadrasahEntry">Madrasah Entry</a>--%>
+                            <a href="Mkt_MadrasahInfoDetailsEntry">Madrasah Entry</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_MadrasahInfoDetailsEntryUdate">Madrasah Entry Update</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_MadrashaDonationInfo">Education Development Cost</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_MadrashaInfo">Somity wise Madrasah</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_Madrasha_PaymentSchedule">Payment Schedule</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_MadrashaDonationPayment">Donation Payment</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_TeritoryBudget">Teritory Budget</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_MadrasahStudentEdit">Madrasha Student Edit</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_Madrasah_Payment_Return">Madrasha Payment Return</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Madrasah menu End-->
+
+
+                <!--Speciman menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Specimen</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Mkt_SpecimanChalan">Specimen Chalan</a>
+                        </li>
+
+                        <%--<li class="sub-menu">
+                            <a href="#">Cancel Speciman</a>
+                        </li>--%>
+                        <li class="sub-menu">
+                            <a href="Mkt_SpecimanReturn">Specimen Return</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_SpecimanInternalTransfer">Internal Transfer</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_CollectionDepositByTso">Collection</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_SpecimanAdj.aspx">Speciman Adjustment</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="SpecimenAdjustmentLetter">Specimen Adjustment Letter</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <!--Speciman menu End-->
+                <!--Teacher Info menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Teacher Info</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Mkt_TeacherInfoByMadrasah.aspx">Teacher Info Entry</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_RptTeacherInfoByMadrasah.aspx">Teacher Info Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Teacher Info End-->
+                <!--Packet Booking-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Packet Booking</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Mkt_BookingBill.aspx">Packet Booking Entry</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Packet Booking End-->
+                <!--Target Entry-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Sales Target</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Mkt_MonthlyTargetEntryByTerritory.aspx">Monthwise Target Entry</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Packet Booking End-->
+                <!--Route Plan menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Route Plan</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="MktRouteMapping">Ropute Mapping</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktRoutePlan">New Route</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Route menu End-->
+                <!--Bonus menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Bonus</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="#">Calculate Agent Bonus</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Show All Agent Bonus</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Bonus menu End-->
+                <!--Basic Settings menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Basic Settings</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="MktRegion">Region</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktDivision">Division</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktZone">Zone</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="MktTeritory.aspx">Teritory</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">District</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Thana</a>
+                        </li>
+                        <%-- <li class="sub-menu">
+                            <a href="#">Transport Information</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Choat</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Polythene</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Sutli</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Madrasah Entry</a>
+                        </li>--%>
+                    </ul>
+                </li>
+                <!--Basic Settings menu End-->
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <p class="page-heading"><span>Marketing Department</span></p>
+    <asp:ContentPlaceHolder ID="MarketingContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="RequiredJS" runat="server">
+    <asp:ContentPlaceHolder ID="RequiredJSMarketing" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+

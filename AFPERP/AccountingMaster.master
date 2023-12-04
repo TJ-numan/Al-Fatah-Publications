@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AccountingMaster.master.cs" Inherits="BLL.AccountingMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SidebarContent" runat="server">
+
+
+
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+
+                <li>
+                    <a href="AccountsHome">
+                        <i class="icon-dashboard"></i>
+                        <span>Accounts Dashboard</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+                <!--multi level menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Reports</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Challan</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Acc_DatewiseChallan">Datewise Challan </a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Acc_Rpt_AgentTransactionStatement">Agent Transaction Statement</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                          <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Return</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Acc_DatewiseReturn">Datewise Return </a>
+                                </li>
+                            </ul>
+                        </li>                      
+                     
+
+                     
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Credit Agents</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Acc_Rpt_AgentSummary">Whole Year Summary</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Deposit</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Acc_Rpt_MRSheetPrint.aspx">Print MR Sheet</a>
+                                    <a href="Mkt_DatewiseSpecialOfferDeposit.aspx">Deposit (Special Offer)</a>
+                                    <a href="Acc_CBOCMrPrint.aspx">CashBack MR Print</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>RnD Work</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Account_RnDWorkOrderPrint.aspx">Work Order ALia</a>
+                                    <a href="Account_RnDWorkOrderBillPrint.aspx">Work Order Bill ALia</a>
+                                    <a href="Account_RnDWorkOrderPrintQawmi.aspx">Work Order Qawmi</a>
+                                    <a href="Account_RnDWorkOrderBillPrintQawmi.aspx">Work Order Bill Qawmi</a>
+                                    <a href="Acca_BookwiseRnDWorkOrder.aspx">Bookwise Order Alia</a>
+                                    <a href="Acca_WritterwiseWorkOrder.aspx">Writerwise Order Alia</a>
+                                    <a href="Acca_WritterwiseWorkOrderQawmi.aspx">Writerwise Order Qawmi</a>                                  
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+
+                </li>
+
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Collection</span>
+                    </a>
+                    <ul class="sub">
+
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Deposit</span>
+                            </a>
+
+                            <ul class="sub">
+
+
+                                <li class="sub-menu">
+                                    <a href="ACC_MRSheet">MR Sheet</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Acc_DatewiseMRSheet">Datewise MR Sheet</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="DoMoneyReceipt.aspx">MR From Sheet</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="MktCollectionDeposit">Deposit</a>
+                                </li>
+
+
+                                <li class="sub-menu">
+                                    <a href="MktCollectionDepositUpdate">Update Money Receipt</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Acc_CancelDeposit">Cancel Deposit</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <!--multi level menu end-->
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <p class="page-heading"><span>Accounts Department</span></p>
+    <asp:ContentPlaceHolder ID="AccountingContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="RequiredJS" runat="server">
+    <asp:ContentPlaceHolder ID="RequiredJSAcc" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

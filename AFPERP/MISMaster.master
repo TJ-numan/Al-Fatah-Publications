@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MISMaster.master.cs" Inherits="BLL.MISMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="SidebarContent" runat="server">
+      <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="MISHome.aspx">
+                        <i class="icon-dashboard"></i>
+                        <span>MIS Dashboard</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="MIS_CreateUser.aspx">
+                        <i class="icon-user"></i>
+                        <span>Create User</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="MIS_FormEntry.aspx">
+                        <i class="icon-user"></i>
+                        <span>Entry Form</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="MIS_UserManage.aspx">
+                        <i class="icon-user"></i>
+                        <span>Manage User</span>
+                    </a>
+                </li>    
+                
+                            
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+     <h1 class="page-heading ">MIS Department</h1>
+    <asp:ContentPlaceHolder ID="MISContent" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="RequiredJS" runat="server">
+     <asp:ContentPlaceHolder ID="RequiredJSPro" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DefaultMaster.master.cs" Inherits="BLL.DefaultMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="SidebarContent" runat="server">
+    <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+                  <li>
+                      <a>
+                          <i class="icon-dashboard"></i>
+                          <span> Department Dashboard</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="RandDHome">
+                          <i class=" icon-laptop"></i>
+                          <span>R & D</span>
+                      </a>
+                      
+                  </li>
+
+                   <li class="sub-menu">
+                      <a href="ProHome">
+                          <i class="icon-laptop"></i>
+                          <span>Production</span>
+                      </a>
+                      
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="MarketingHome">
+                          <i class="icon-laptop"></i>
+                          <span>Marketing</span>
+                      </a>
+                      
+                  </li>
+                  <li class="sub-menu">
+                      <a href="DistributionHome">
+                          <i class="icon-laptop"></i>
+                          <span>Distribution</span>
+                      </a>
+                      
+                  </li>
+                  <li class="sub-menu">
+                      <a href="Branding">
+                          <i class="icon-laptop"></i>
+                          <span>Branding</span>
+                      </a>
+                      
+                  </li>
+                
+                  <li class="sub-menu">
+                      <a href="AccountsHome.aspx">
+                          <i class="icon-laptop"></i>
+                          <span>Accounts</span>
+                      </a>
+                      
+                  </li>
+                  <li class="sub-menu">
+                      <a href="HRHome">
+                          <i class="icon-laptop"></i>
+                          <span>HR</span>
+                      </a>
+                      
+                  </li>
+
+                   <li class="sub-menu">
+                      <a href="MISHome">
+                          <i class="icon-laptop"></i>
+                          <span>MIS</span>
+                      </a>
+                      
+                  </li>  
+                  <li class="sub-menu">
+                      <a href="#">
+                          <i class="icon-laptop"></i>
+                          <span>Management</span>
+                      </a>                  
+                  </li>
+                                              
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+    <asp:ContentPlaceHolder ID ="DefaultContent" runat ="server" >
+
+    </asp:ContentPlaceHolder>
+    
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="RequiredJS" runat="server">
+
+     <asp:ContentPlaceHolder ID ="RequiredJSDepartment" runat ="server">
+
+     </asp:ContentPlaceHolder> 
+
+   
+</asp:Content>
+
+    

@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0FA86F3-EDA6-4339-AD86-924FD0124FF0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACC\SqlLi_MRSheetDetailProvider.cs" />
+    <Compile Include="ACC\SqlLi_MRSheetProvider.cs" />
+    <Compile Include="DataAccessObject.cs" />
+    <Compile Include="HR\SqlLi_ApprisalCycleProvider.cs" />
+    <Compile Include="HR\SqlLi_ApprisalDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_ApprisalExecutionProvider.cs" />
+    <Compile Include="HR\SqlLi_ApprisalResultProvider.cs" />
+    <Compile Include="HR\SqlLi_AssetBrandProvider.cs" />
+    <Compile Include="HR\SqlLi_AssetCategoryProvider.cs" />
+    <Compile Include="HR\SqlLi_AssetDeliveryProvider.cs" />
+    <Compile Include="HR\SqlLi_AssetListProvider.cs" />
+    <Compile Include="HR\SqlLi_AssetReturnProvider.cs" />
+    <Compile Include="HR\SqlLi_AssetTransferProvider.cs" />
+    <Compile Include="HR\SqlLi_AssetVendorProvider.cs" />
+    <Compile Include="HR\SqlLi_AttnPolicyProvider.cs" />
+    <Compile Include="HR\SqlLi_BloodGroupProvider.cs" />
+    <Compile Include="HR\SqlLi_CompetencyMapProvider.cs" />
+    <Compile Include="HR\SqlLi_CompetencyProvider.cs" />
+    <Compile Include="HR\SqlLi_CouResPersonProvider.cs" />
+    <Compile Include="HR\SqlLi_CourseOutlineProvider.cs" />
+    <Compile Include="HR\SqlLi_CourseProvider.cs" />
+    <Compile Include="HR\SqlLi_CvBankProvider.cs" />
+    <Compile Include="HR\SqlLi_DepartmentProvider.cs" />
+    <Compile Include="HR\SqlLi_DependentProvider.cs" />
+    <Compile Include="HR\SqlLi_DescriptiveQuestionProvider.cs" />
+    <Compile Include="HR\SqlLi_DescriptiveTestDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_DesignationProvider.cs" />
+    <Compile Include="HR\SqlLi_DisciplinaryActionProvider.cs" />
+    <Compile Include="HR\SqlLi_EducationLevelProvider.cs" />
+    <Compile Include="HR\SqlLi_EduResultProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpAssetGivenProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpClearanceDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpClearanceProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpEducationProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpIncrePromoTranProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpLanguageProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpLeaveApplicatonProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpLeaveStatusProvider.cs" />
+    <Compile Include="HR\SqlLi_EmployeeInfoProvider.cs" />
+    <Compile Include="HR\SqlLi_EmploymentProvider.cs" />
+    <Compile Include="HR\SqlLi_EmploymentStatusProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpMembershipProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpNotDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpNotificationsProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpPassportVisaProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpPayDayDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpPayDayProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpProfessionalCertifProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpSalaryDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpSalaryProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpShiftMapProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpSkillsProvider.cs" />
+    <Compile Include="HR\SqlLi_EmpTrainingProvider.cs" />
+    <Compile Include="HR\SqlLi_ExamTitleProvider.cs" />
+    <Compile Include="HR\SqlLi_FinalSettlementProvider.cs" />
+    <Compile Include="HR\SqlLi_GenderProvider.cs" />
+    <Compile Include="HR\SqlLi_GoalDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_GoalProvider.cs" />
+    <Compile Include="HR\SqlLi_HolidayProvider.cs" />
+    <Compile Include="HR\SqlLi_HRAnnounceDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_HRAnnounceProvider.cs" />
+    <Compile Include="HR\SqlLi_InfoStatusProvider.cs" />
+    <Compile Include="HR\SqlLi_InterviewSchduleProvider.cs" />
+    <Compile Include="HR\SqlLi_InterviewTemplateProvider.cs" />
+    <Compile Include="HR\SqlLi_InterviewTypeProvider.cs" />
+    <Compile Include="HR\SqlLi_IntTestProvider.cs" />
+    <Compile Include="HR\SqlLi_JobCategoryProvider.cs" />
+    <Compile Include="HR\SqlLi_JobDesBenefitProvider.cs" />
+    <Compile Include="HR\SqlLi_JobDescriptionProvider.cs" />
+    <Compile Include="HR\SqlLi_JobDesEducationalReqProvider.cs" />
+    <Compile Include="HR\SqlLi_JobDesExperienceReqProvider.cs" />
+    <Compile Include="HR\SqlLi_JobDesReponsibilityProvider.cs" />
+    <Compile Include="HR\SqlLi_JobDesRequirmentProvider.cs" />
+    <Compile Include="HR\SqlLi_JobLocationProvider.cs" />
+    <Compile Include="HR\SqlLi_JobTaskMapProvider.cs" />
+    <Compile Include="HR\SqlLi_JobTaskProvider.cs" />
+    <Compile Include="HR\SqlLi_JobTitleProvider.cs" />
+    <Compile Include="HR\SqlLi_LeaveApprovalProvider.cs" />
+    <Compile Include="HR\SqlLi_LeavePeriodProvider.cs" />
+    <Compile Include="HR\SqlLi_LeaveRuleProvider.cs" />
+    <Compile Include="HR\SqlLi_LeaveTypeProvider.cs" />
+    <Compile Include="HR\SqlLi_LeaveTypeRuleProvider.cs" />
+    <Compile Include="HR\SqlLi_LetterTemplateProvider.cs" />
+    <Compile Include="HR\SqlLi_LoanAdvanceDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_LoanAdvanceProvider.cs" />
+    <Compile Include="HR\SqlLi_MaritalStatusProvider.cs" />
+    <Compile Include="HR\SqlLi_McqQuestionProvider.cs" />
+    <Compile Include="HR\SqlLi_MCQTestDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_MCQuesAnwerProvider.cs" />
+    <Compile Include="HR\SqlLi_MonthlyPayDayProvider.cs" />
+    <Compile Include="HR\SqlLi_NationalityProvider.cs" />
+    <Compile Include="HR\SqlLi_OffScheduleProvider.cs" />
+    <Compile Include="HR\SqlLi_OffShiftProvider.cs" />
+    <Compile Include="HR\SqlLi_OrganogramProvider.cs" />
+    <Compile Include="HR\SqlLi_PayGradeProvider.cs" />
+    <Compile Include="HR\SqlLi_PayHeadProvider.cs" />
+    <Compile Include="HR\SqlLi_PayScaleDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_PayScaleProvider.cs" />
+    <Compile Include="HR\SqlLi_PFApplicationProvider.cs" />
+    <Compile Include="HR\SqlLi_PFContributionProvider.cs" />
+    <Compile Include="HR\SqlLi_PFDistributionProvider.cs" />
+    <Compile Include="HR\SqlLi_PFNomineeProvider.cs" />
+    <Compile Include="HR\SqlLi_PFProfitDistributionDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_PFProfitDistributionProvider.cs" />
+    <Compile Include="HR\SqlLi_PFProjectRuleProvider.cs" />
+    <Compile Include="HR\SqlLi_PFProjectTranProvider.cs" />
+    <Compile Include="HR\SqlLi_PFRuleProvider.cs" />
+    <Compile Include="HR\SqlLi_ProvidentFundDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_ProvidentFundProvider.cs" />
+    <Compile Include="HR\SqlLi_QuestionTemplateProvider.cs" />
+    <Compile Include="HR\SqlLi_ReligionProvider.cs" />
+    <Compile Include="HR\SqlLi_ResourcePerSkillProvider.cs" />
+    <Compile Include="HR\SqlLi_SalaryDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_SalaryPayDetailProvider.cs" />
+    <Compile Include="HR\SqlLi_SalaryProvider.cs" />
+    <Compile Include="HR\SqlLi_SectionProvider.cs" />
+    <Compile Include="HR\SqlLi_TermReasonProvider.cs" />
+    <Compile Include="HR\SqlLi_TrainApplicationProvider.cs" />
+    <Compile Include="HR\SqlLi_TrainingApprovalProvider.cs" />
+    <Compile Include="HR\SqlLi_TrainingBenefitProvider.cs" />
+    <Compile Include="HR\SqlLi_TrainInstituteProvider.cs" />
+    <Compile Include="HR\SqlLi_TraningFeedBackProvider.cs" />
+    <Compile Include="HR\SqlLi_VacancyAnounceProvider.cs" />
+    <Compile Include="HR\SqlLi_VacancyForProvider.cs" />
+    <Compile Include="HR\SqlLi_VacancyReqApprovalProvider.cs" />
+    <Compile Include="HR\SqlLi_VacancyRequisitionProvider.cs" />
+    <Compile Include="HR\SqlLi_VacancyTemplateProvider.cs" />
+    <Compile Include="HR\SqlLi_WeekendProvider.cs" />
+    <Compile Include="HR\SqlLi_WorkShiftProvider.cs" />
+    <Compile Include="li_GetAlwaysTotalRow.cs" />
+    <Compile Include="li_LibraryOwnerProvider.cs" />
+    <Compile Include="Marketing\li_associateProvider.cs" />
+    <Compile Include="Marketing\li_BankProvider.cs" />
+    <Compile Include="Marketing\Sql_li_OrganizationProvider.cs" />
+    <Compile Include="Production\Li_SutrapurLaminationProvider.cs" />
+    <Compile Include="Marketing\DemLocationProvider.cs" />
+    <Compile Include="Marketing\li_AreaProvider.cs" />
+    <Compile Include="Marketing\li_AuthorProvider.cs" />
+    <Compile Include="Marketing\li_BookInformationProvider.cs" />
+    <Compile Include="Marketing\li_BookTypeProvider.cs" />
+    <Compile Include="Marketing\li_BookVersionInfoProvider.cs" />
+    <Compile Include="Marketing\li_ChallanDetailsProvider.cs" />
+    <Compile Include="Marketing\li_ChallanProvider.cs" />
+    <Compile Include="Marketing\li_DistrictProvider.cs" />
+    <Compile Include="Marketing\li_DonLetterPaymentProvider.cs" />
+    <Compile Include="Marketing\li_EditionProvider.cs" />
+    <Compile Include="Marketing\li_LibraryInformationProvider.cs" />
+    <Compile Include="Marketing\li_PrimaryObservationProvider.cs" />
+    <Compile Include="Marketing\li_RegionProvider.cs" />
+    <Compile Include="Marketing\li_ReturnDetailsProvider.cs" />
+    <Compile Include="Marketing\li_ReturnProvider.cs" />
+    <Compile Include="Marketing\li_StockDetailsProvider.cs" />
+    <Compile Include="Marketing\li_StockProvider.cs" />
+    <Compile Include="Marketing\li_ThanaProvider.cs" />
+    <Compile Include="Marketing\Sqlli_AdjustChalanProvider.cs" />
+    <Compile Include="Marketing\Sqlli_AdjustChalan_DatailProvider.cs" />
+    <Compile Include="Marketing\SqlLi_AgentQawmiMadrasahProvider.cs" />
+    <Compile Include="Marketing\Sqlli_AgentStockEntryProvider.cs" />
+    <Compile Include="Marketing\SqlLi_BankNameProvider.cs" />
+    <Compile Include="Marketing\SqlLi_BinderReturnDetailProvider.cs" />
+    <Compile Include="Marketing\SqlLi_BinderReturnProvider.cs" />
+    <Compile Include="Marketing\SqlLi_BoardQawmiMadrasahProvider.cs" />
+    <Compile Include="Marketing\Sqlli_BookGroupProvider.cs" />
+    <Compile Include="Marketing\Sqlli_BookGroupStockProvider.cs" />
+    <Compile Include="Marketing\Sqlli_BookReplacementDetailProvider.cs" />
+    <Compile Include="Marketing\Sqlli_BookReplacementProvider.cs" />
+    <Compile Include="Marketing\Sqlli_BookTargetProvider.cs" />
+    <Compile Include="Marketing\SqlLi_CashLibraryProvider.cs" />
+    <Compile Include="Marketing\SqlLi_CategoryProvider.cs" />
+    <Compile Include="Marketing\Sqlli_CatWiseChalanProvider.cs" />
+    <Compile Include="Marketing\Sqlli_ChalanDeliveryProvider.cs" />
+    <Compile Include="Marketing\Sqlli_ChoatPartyProvider.cs" />
+    <Compile Include="Marketing\Sqlli_ClassesProvider.cs" />
+    <Compile Include="Marketing\SqlLi_CompanyProvider.cs" />
+    <Compile Include="Marketing\SqlLi_Dam_Oth_PartyProvider.cs" />
+    <Compile Include="Marketing\SqlLi_Dam_PartyProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DemercationProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DepositForProvider.cs" />
+    <Compile Include="Marketing\Sqlli_DepositInformationProvider.cs" />
+    <Compile Include="Marketing\Sqlli_DepositProvider.cs" />
+    <Compile Include="Marketing\Sqlli_DivisionProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonationAmtProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonationBasicProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonationDesProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonationDetailProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonationForProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonPaymentProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonPaymentReturnProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonPaymentSheduleProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonPayTypeProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonYearProvider.cs" />
+    <Compile Include="Marketing\SqlLi_HouseRent_PartyProvider.cs" />
+    <Compile Include="Marketing\Sqlli_Int_FromProvider.cs" />
+    <Compile Include="Marketing\Sqlli_Int_From_DatailProvider.cs" />
+    <Compile Include="Marketing\Sqlli_Int_ToProvider.cs" />
+    <Compile Include="Marketing\Sqlli_Int_To_DetailProvider.cs" />
+    <Compile Include="Marketing\Sqlli_MadrasahEntryProvider.cs" />
+    <Compile Include="Marketing\SqlLi_MadrasahInfoProvider.cs" />
+    <Compile Include="Marketing\SqlLi_MadrasahQawmiProvider.cs" />
+    <Compile Include="Marketing\SqlLi_MadrasahQStudentProvider.cs" />
+    <Compile Include="Marketing\Sqlli_PacketBillProvider.cs" />
+    <Compile Include="Marketing\SqlLi_PaymentProvider.cs" />
+    <Compile Include="Marketing\Sqlli_PktCheckedByProvider.cs" />
+    <Compile Include="Marketing\Sqlli_PktPacketByProvider.cs" />
+    <Compile Include="Marketing\Sqlli_PktReceivedByProvider.cs" />
+    <Compile Include="Marketing\SqlLi_PointsProvider.cs" />
+    <Compile Include="Marketing\Sqlli_PolithinPartyProvider.cs" />
+    <Compile Include="Marketing\SqlLi_PrintReqAppliedProvider.cs" />
+    <Compile Include="Marketing\SqlLi_PrintReqProvider.cs" />
+    <Compile Include="Marketing\SqlLi_PrintReq_CurProvider.cs" />
+    <Compile Include="Marketing\SqlLi_PrintReq_LastProvider.cs" />
+    <Compile Include="Marketing\Sqlli_ReceiveChoatProvider.cs" />
+    <Compile Include="Marketing\Sqlli_ReceivePolithinProvider.cs" />
+    <Compile Include="Marketing\Sqlli_ReceiveSutliProvider.cs" />
+    <Compile Include="Marketing\SqlLi_RotePlanProvider.cs" />
+    <Compile Include="Marketing\SqlLi_RoutePlanDetailsProvider.cs" />
+    <Compile Include="Marketing\Sqlli_SalesPersonProvider.cs" />
+    <Compile Include="Marketing\Sqlli_SendForDamageDetailProvider.cs" />
+    <Compile Include="Marketing\Sqlli_SendForDamageProvider.cs" />
+    <Compile Include="Marketing\Sqlli_SendForRebindDetailProvider.cs" />
+    <Compile Include="Marketing\Sqlli_SendForRebindProvider.cs" />
+    <Compile Include="Marketing\SqlLi_SpecimenAdjLetterDetailProvider.cs" />
+    <Compile Include="Marketing\SqlLi_SpecimenAdjLetterProvider.cs" />
+    <Compile Include="Marketing\Sqlli_SpecimenChalanProvider.cs" />
+    <Compile Include="Marketing\Sqlli_SpecimenChalan_DetailProvider.cs" />
+    <Compile Include="Marketing\SqlLi_Specimen_ReturnDetailProvider.cs" />
+    <Compile Include="Marketing\Sqlli_Specimen_ReturnProvider.cs" />
+    <Compile Include="Marketing\SqlLi_StudentR2Provider.cs" />
+    <Compile Include="Marketing\Sqlli_SutliPartyProvider.cs" />
+    <Compile Include="Marketing\SqlLi_TeacherInfoProvider.cs" />
+    <Compile Include="Marketing\SqlLi_TeritoryBudgetTransferProvider.cs" />
+    <Compile Include="Marketing\Sqlli_TeritoryProvider.cs" />
+    <Compile Include="Marketing\Sqlli_TranferMainToReturnDetailProvider.cs" />
+    <Compile Include="Marketing\Sqlli_TranferMainToReturnProvider.cs" />
+    <Compile Include="Marketing\Sqlli_TranferReturnToMainDetailProvider.cs" />
+    <Compile Include="Marketing\Sqlli_TranferReturnToMainProvider.cs" />
+    <Compile Include="Marketing\Sqlli_TransectionTypeProvider.cs" />
+    <Compile Include="Marketing\Sqlli_TransportInfoProvider.cs" />
+    <Compile Include="Marketing\Sqlli_ZoneProvider.cs" />
+    <Compile Include="Marketing\Sql_Madrasha_Provider.cs" />
+    <Compile Include="MIS\SqlLi_FormListProvider.cs" />
+    <Compile Include="MIS\SqlLi_UserAccessProvider.cs" />
+    <Compile Include="Production\SqlLi_BinderBillDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_BinderBillProvider.cs" />
+    <Compile Include="Production\Sqlli_BindOrderProvider.cs" />
+    <Compile Include="Production\Sqlli_BookBinderInfoProvider.cs" />
+    <Compile Include="Production\Sqlli_BookCoverSupInfoProvider.cs" />
+    <Compile Include="Production\Sqlli_BookDeliveryDetailProvider.cs" />
+    <Compile Include="Production\Sqlli_BookDeliveryToBinderProvider.cs" />
+    <Compile Include="Production\Sqlli_BookPricingOutputProvider.cs" />
+    <Compile Include="Production\Sqlli_BookPricingProvider.cs" />
+    <Compile Include="Production\Sqlli_BookProductionCostProvider.cs" />
+    <Compile Include="Production\Sqlli_BookProductionDetailsProvider.cs" />
+    <Compile Include="Production\Sqlli_BookRecFrBinderProvider.cs" />
+    <Compile Include="Production\Sqlli_BookSizeBasicProvider.cs" />
+    <Compile Include="Production\SqlLi_Book_PartProvider.cs" />
+    <Compile Include="Production\SqlLi_CoverBillDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_CoverBillProvider.cs" />
+    <Compile Include="Production\Sqlli_GodownReceiveChoatProvider.cs" />
+    <Compile Include="Production\Sqlli_GodownReceiveProvider.cs" />
+    <Compile Include="Production\Sqlli_GodownReceiveSutliProvider.cs" />
+    <Compile Include="Production\Sqlli_GodownReceive_CoverProvider.cs" />
+    <Compile Include="Production\Sqlli_InnerFormaPrintingProvider.cs" />
+    <Compile Include="Production\Sqlli_LaminationTypeBasicProvider.cs" />
+    <Compile Include="Production\SqlLi_LemiChallanDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_LemiChallanProvider.cs" />
+    <Compile Include="Production\Sqlli_LeminationOrderDetailProvider.cs" />
+    <Compile Include="Production\Sqlli_LeminationOrderPrintDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_LeminationOrderPrintProvider.cs" />
+    <Compile Include="Production\SqlLi_LeminationOrderProvider.cs" />
+    <Compile Include="Production\Sqlli_LeminatioPartyInfoProvider.cs" />
+    <Compile Include="Production\Sqlli_LemiSizeBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_OverheadProvider.cs" />
+    <Compile Include="Production\SqlLi_PaperAcUsedDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_PaperAcUsedProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperBrandBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperOriginBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperPartyProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperPhurchaseProvider.cs" />
+    <Compile Include="Production\SqlLi_PaperReturnDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_PaperReturnProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperSizeBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperTransferDetailProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperTransferProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperTypeBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_PaperWeightBasicProvider.cs" />
+    <Compile Include="Production\SqlLi_Paper_DeliveryProvider.cs" />
+    <Compile Include="Production\Sqlli_Paper_Delivery_DetailProvider.cs" />
+    <Compile Include="Production\Sqlli_Paper_M_UProvider.cs" />
+    <Compile Include="Production\Sqlli_PestingBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_PestingPartyInfoProvider.cs" />
+    <Compile Include="Production\SqlLi_PestingProvider.cs" />
+    <Compile Include="Production\SqlLi_Pesting_FormaProvider.cs" />
+    <Compile Include="Production\SqlLi_Pesting_InnerProvider.cs" />
+    <Compile Include="Production\SqlLi_Pesting_PageProvider.cs" />
+    <Compile Include="Production\SqlLi_Pesting_PostaniProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateBillDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateBillProvider.cs" />
+    <Compile Include="Production\Sqlli_PlateBrandBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_PlateBuyerInfoProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateDamageDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateDamageProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateProcessDetailProvider.cs" />
+    <Compile Include="Production\Sqlli_PlateProcessPartyProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateProcessProvider.cs" />
+    <Compile Include="Production\SqlLi_PlatePurchaseDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_PlatePurchaseProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateReturnTransferDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateReturnTransferProvider.cs" />
+    <Compile Include="Production\Sqlli_PlateSizeBasicProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateSupplyProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateSupply_FormaDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateSupply_FormaProvider.cs" />
+    <Compile Include="Production\SqlLi_PlateSupply_TypeProvider.cs" />
+    <Compile Include="Production\Sqlli_PlateTransferDetailProvider.cs" />
+    <Compile Include="Production\Sqlli_PlateTransferProvider.cs" />
+    <Compile Include="Production\Sqlli_PlateTypeBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_PressInfoProvider.cs" />
+    <Compile Include="Production\SqlLi_PrintBillDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_PrintBillDetail_PlateProvider.cs" />
+    <Compile Include="Production\SqlLi_PrintBillProvider.cs" />
+    <Compile Include="Production\SqlLi_PrintOrderBasicProvider.cs" />
+    <Compile Include="Production\SqlLi_Print_Order_CoverDetailsProvider.cs" />
+    <Compile Include="Production\SqlLi_Print_Order_CoverProvider.cs" />
+    <Compile Include="Production\SqlLi_Print_Order_FormaDetailsProvider.cs" />
+    <Compile Include="Production\SqlLi_Print_Order_FormaProvider.cs" />
+    <Compile Include="Production\SqlLi_ProcessBillDetailProvider.cs" />
+    <Compile Include="Production\SqlLi_ProcessBillProvider.cs" />
+    <Compile Include="Production\Sqlli_ProductionBookDetailsProvider.cs" />
+    <Compile Include="Production\Sqlli_ProductionCoverPaperProvider.cs" />
+    <Compile Include="Production\Sqlli_ProductionFormaPaperProvider.cs" />
+    <Compile Include="Production\Sqlli_ProductionInnerPaperProvider.cs" />
+    <Compile Include="Production\Sqlli_PromotionalItemBasicProvider.cs" />
+    <Compile Include="Production\Sqlli_TempPricingBookPrintProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R&amp;D\BookWiseTaskProvider.cs" />
+    <Compile Include="R&amp;D\li_TaskProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_AuthorProvider.cs" />
+    <Compile Include="R&amp;D\SqlLi_TaskWiseBookInformationProvider.cs" />
+    <Compile Include="R&amp;D\SqlLi_BookInfo_SectionProvider.cs" />
+    <Compile Include="R&amp;D\SqlLi_Book_GProvider.cs" />
+    <Compile Include="R&amp;D\SqlLi_Book_SessionProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_RNDPlan_SectionProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_RnDQawmiWorkOrderDetailsProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_RnDWorkDetailsProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_RnDWorkOrderDetailsProvider.cs" />
+    <Compile Include="R&amp;D\SqlLi_RND_PlanProvider.cs" />
+    <Compile Include="R&amp;D\SqlLi_RND_Plan_DetailProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_ScriptBookProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_Script_ChapterProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_Script_DerectionProvider.cs" />
+    <Compile Include="R&amp;D\SqlLi_TaskProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_WorkTypeRNDComputerProvider.cs" />
+    <Compile Include="R&amp;D\Sqlli_WorkTypeRNDProvider.cs" />
+    <Compile Include="R&amp;D\TaskDetailProvider.cs" />
+    <Compile Include="R&amp;D\WorkPlanProvider.cs" />
+    <Compile Include="SqlLi_AdminUserProvider.cs" />
+    <Compile Include="Marketing\SqlLi_DonLetterProvider.cs" />
+    <Compile Include="SqlLi_EditionProvider.cs" />
+    <Compile Include="Sqlli_LibraryInformationProvider.cs" />
+    <Compile Include="SqlLi_ManagementSummaryManager..cs" />
+    <Compile Include="SqlLi_TargetDetailsProvider.cs" />
+    <Compile Include="Store\SqlLi_StockAdjustmentProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{979e3b8b-bf55-4461-9e64-92f7a0b38cda}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

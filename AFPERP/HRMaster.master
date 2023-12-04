@@ -1,0 +1,458 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HRMaster.master.cs" Inherits="BLL.HRMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SidebarContent" runat="server">
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="HRHome">
+                        <i class="icon-dashboard"></i>
+                        <span>HR Dashboard</span>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Reports</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="HRM_rptEmployeeInfo.aspx">Employee Info</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetListByCategory.aspx">Asset Information</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetDetailsByAssetCode.aspx">Asset Details By Code</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>HR Administration</span>
+                    </a>
+                    <ul class="sub">
+
+                        <li class="sub-menu">
+                            <a href="HrmJobDesResponsibility">Job Des Responsibility</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobDesEducationalReq">Job Des Educational Req</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobDesExperienceReq">Job Des Experience Req</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobDesRequirement">Job Des Requirement</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobDesBenefit">Job Des Benefit</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobTask">Job Task</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobDescription">Job Description</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetBrand">Asset Brand</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetCategory">Asset Category</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetVendor">Asset Vendor</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Adm_HouseRentParty">House Rent Party</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetList">Asset List</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetDelivery">Asset Delivery</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetReturn">Asset Return</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetTransfer">Asset Transfer</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAnnounce">Announce</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmAssetGiven">Asset Given</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Recruitment System</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="HrmVacancyFor">Vacancy For</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmVacancyRequisition">Vacancy Requisition</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmVacancyTemplate">Vacancy Template</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmVacancyAnnounce">Vacancy Announce</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmCVBank">CV Bank</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmInterviewType">Interview Type</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmInterviewSchedule">Interview Schedule</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmInterviewTemplate">Interview Template</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmQuestionTemplate">Question Template</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmDescriptiveQst">Descriptive Question</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmMcqQuestion">MCQ Question</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmMcqQuesAns">MCQ QuesAns</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmInterviewTest">Interview Test</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>PIMS</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="HrmEmployeeInfo">Employee Information</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmDependents">Dependents</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmpEducation">Emp Education</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmpTraining">Emp Training</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmpProfesionCertf">Profesional Certificate</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmployment">Employment</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmployeeSkills">Employee Skills</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmpLanguage">Employee Language</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmpMembership">Employee Membership</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmpPassportVisa">Employee PassportVisa</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmployeeSalary">Employee Salary</a>
+                        </li>
+                        <li class="sub-menu" style="display: none;">
+                            <a href="HrmEmpIncrePromoTrans">EmpIncrePromoTrans</a>
+                        </li>
+                        <li class="sub-menu" style="display: none;">
+                            <a href="HrmDisciplinaryAction">Disciplinary Action</a>
+                        </li>
+                        <li class="sub-menu" style="display: none;">
+                            <a href="HrmFinalSettlement">Final Settlement</a>
+                        </li>
+                        <li class="sub-menu" style="display: none;">
+                            <a href="HrmEmpClearance">Employee Clearance</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Attendance</span>
+                    </a>
+                    <ul class="sub">
+
+
+                        <li class="sub-menu">
+                            <a href="HrmAttendancePolicy">Attendance Policy</a>
+                        </li>
+
+
+                        <li class="sub-menu">
+                            <a href="HrmEmpShiftMap">Employee Schedule Map</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmLeavePeriod">Leave Period</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmLeaveType">Leave Type</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmLeaveRule">Leave Rule</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmLeaveTypeRule">Leave Type Rule</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmWeekend">Weekend</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmHoliday">Holiday</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmLeaveStatus">Employee Leave Status</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmLeaveApplication">Leave Application</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmLeaveApproval">Leave Approval</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmMonthlyPayDays">Monthly PayDays</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmpNotification">Employee Notification</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Payroll Management</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="HrmPFRules">PF Rules</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmPFApplication">PF Application</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmpPayDay">Employee PayDay</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmSalary">Salary</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmProvidentFund">Provident Fund</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmPF_Contribution">PF Contribution</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmPFProjectTran">PF Project Transaction</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmPFProjectRule">PF Project Rule</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmPFDistribution">PF Distribution</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmPF_ProfitDistribution">PF Profit Distribution</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmLoanAdvance">Loan Advance</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmMonthlyPF">Monthly PF</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Performance</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="HrmGoal">Goal</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="HrmCompetency">Competency</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmCompetencyMap">Competency Map</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobTaskMap">Job Task Map</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmApprisalCycle">Apprisal Cycle</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmApprisalDetails">Apprisal Details</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmApprisalExecution">Apprisal Execution</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmApprisalResult">Apprisal Result</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Training & Development</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="HrmCourse">Course</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmCourseOutline">Course Outline</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmTrainingInstitute">Training Institute</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmCourseResourcePerson">Course Resource Person</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmResourcePersonSkill">Resource Person Skill</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmTrainingApplication">Training Application</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmTrainingBenefit">Training Benefit</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmTrainingApproval">Training Approval</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmTrainingFeedback">Training Feedback</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Setting</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="HrmInfoStatus">InfoStatus</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="HrmDepartment">Department</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmDesignation">Designation</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmSection">Section</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="HrmJobCategory">job Category</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobTitle" id="clicker">job Title</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEmploymentStatus">Employment Status</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmJobLocation">job Location</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmOfficeSchedule">Office Schedule</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmWorkShift">Work Shift</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmMaritalStatus">Marital Status</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmGender">Gender</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmNationality">Nationality</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmPayGrade">PayGrade</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmPayHead">PayHead</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="HrmPayScale">PayScale</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="HrmLetterTemplate">Letter Template</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmTermReason">Termination Reason</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmBloodGroup">Blood Group</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmReligion">Religion</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEducationLevel">Education Level</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmExamTitle">Exam Title</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmEducationResult">Edu Result</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="HrmOrganogram">Organogram</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <p class="page-heading"><span>HR Department</span></p>
+    <asp:ContentPlaceHolder ID="HRContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="RequiredJS" runat="server">
+    <asp:ContentPlaceHolder ID="RequiredJSHR" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

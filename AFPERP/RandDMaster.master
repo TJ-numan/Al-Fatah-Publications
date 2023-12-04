@@ -1,0 +1,231 @@
+﻿ <%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RandDMaster.master.cs" Inherits="BLL.RandDMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SidebarContent" runat="server">
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a>
+                        <i class="icon-dashboard"></i>
+                        <span>R&D Dashboard</span>
+                    </a>
+                </li>
+                <!--multi level menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Reports</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="Rnd_Rpt_BookList">Book List</a></li>
+                        <li><a href="Rnd_Rpt_StockDetails">Book Stock Details</a></li>
+                        <li><a href="Rnd_Rpt_SessionwisePlanning">Session Wise Planning</a></li>
+                        <li><a href="Rnd_Rpt_BookDetailPlan">Book Detail Plan</a></li>
+                        <li><a href="Rnd_Rpt_WriterList">Writer List</a></li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Daily Works</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Rnd_Rpt_DailyWorkIndividual">Indivisual</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Rnd_Rpt_DailyWorkSectionWise">Section Wise</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Work Orders</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="RndWorkOrderPrint">Datewise Work Order</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="RnD_WritterwiseWorkOrder">Writerwise Work Order</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="RnDBookWiseWorkOrder">Bookwise Work Order</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="Rnd_Rpt_ScriptPlan">Script Plan</a></li>
+                        <li><a href="Rnd_Rpt_MonthlyWork">Monthly Work</a></li>
+                    </ul>
+                </li>
+                <!--multi level menu end-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Book Information</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RandD_AddNewBook">Add New Book</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Author Information</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RandD_AddNewAuthor">Add New Author</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Planning</span>
+                    </a>
+                    <ul class="sub">
+                        <%--<li><a href="RandDPlanForNewEdition">Plan For New Edition</a></li>--%>
+                        <li><a href="RandDPlanNewBook">Plan For New Book</a></li>
+                        <li><a href="RndScriptPlanning">Script Planning</a></li>
+                        <li><a href="AddNewTaskForPFNB1">Add New Task For PFNB</a></li>
+                        <li><a href="TaskWiseBookReport">Book Wise Task Report</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Writting and Edition</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RndWritingEditingInfo">Writting and Edition Info</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Daily Work Alia</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RndEntryWorks">Entry Works</a></li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Daily Works Print</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Rnd_Rpt_DailyWorkIndividual">Indivisual</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Rnd_Rpt_DailyWorkSectionWise">Section Wise</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="Rnd_UpdateWorkDetails">Entry Works Update</a></li>
+
+                        <li><a href="Rnd_DeleteWorkDetails">Entry Work Delete</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Work Order Alia</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RndWorkOrderEntry.aspx">Work Order Entry</a></li>
+                        <li><a href="RnD_WorkOrderUpdate.aspx">Work Order Update</a></li>
+                        <li><a href="RndWorkOrderCancel.aspx">Work Order Cancel</a></li>
+                        <li><a href="RnD_WorkOrderTransfer">Work Order Transfer</a></li>
+                        <li><a href="RndWorkOrderBillGenerate">Bill Generate</a></li/>                     
+                        <li><a href="RnD_WorkOrderBillPayment">Bill Approval</a></li>
+                        <li><a href="RnD_WorkOrderBillUpdate">Bill Update</a></li>
+                        <li><a href="RnDWorkOrderBillPrint">Bill Print</a></li>
+                        <li><a href="RnDWorkOrderBillStatus">Bill Status</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Daily Work Qawmi</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RndEntryWorksQawmi">Entry Works</a></li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Daily Works Print</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Rnd_Rpt_DailyWorkIndividualQawmi">Indivisual</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Rnd_Rpt_DailyWorkSectionWiseQawmi">Section Wise</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="Rnd_UpdateWorkDetailsQawmi">Entry Works Update</a></li>
+                        <li><a href="Rnd_DeleteWorkDetailsQawmi">Entry Work Delete</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Work Order Qawmi</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RndWorkOrderEntryQawmi.aspx">Work Order Entry</a></li>
+                        <li><a href="RnD_WorkOrderUpdateQawmi.aspx">Work Order Update</a></li>
+                        <li><a href="RndWorkOrderCancelQawmi.aspx">Work Order Cancel</a></li>
+                        <li><a href="RnD_WorkOrderTransferQawmi">Work Order Transfer</a></li>
+                        <li><a href="RndWorkOrderBillGenerateQawmi">Bill Generate</a></li/>                     
+                        <li><a href="RnD_WorkOrderBillPaymentQawmi">Bill Approval</a></li>
+                        <li><a href="RnD_WorkOrderBillUpdateQawmi">Bill Update</a></li>
+                        <li><a href="RnDWorkOrderBillPrintQawmi">Bill Print</a></li>
+                        <li><a href="RnDWorkOrderBillStatusQawmi">Bill Status</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Graphics</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RndWorkOrderEntryGraphics.aspx">Work Order Entry</a></li>
+                        <li><a href="RnD_WorkOrderUpdateGraphics.aspx">Work Order Update</a></li>
+                        <li><a href="RndWorkOrderCancelGraphics.aspx">Work Order Cancel</a></li>
+                        <li><a href="RnD_WorkOrderTransferGraphics">Work Order Transfer</a></li>
+                        <li><a href="RndWorkOrderBillGenerateGraphics">Bill Generate</a></li/>                     
+                        <li><a href="RnD_WorkOrderBillPaymentGraphics">Bill Approval</a></li>
+                        <li><a href="RnD_WorkOrderBillUpdateGraphics">Bill Update</a></li>
+                        <li><a href="RnDWorkOrderBillPrintGraphics">Bill Print</a></li>
+                        <li><a href="RnDWorkOrderBillStatusGraphics">Bill Status</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Pesting</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="RndPestingOrder">Pesting Order</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <h1 class="page-heading ">R&D Department</h1>
+    <asp:ContentPlaceHolder ID="RandDContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="RequiredJS" runat="server">
+    <asp:ContentPlaceHolder ID="RequiredJSRandD" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

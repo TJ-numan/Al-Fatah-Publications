@@ -1,0 +1,51 @@
+﻿<ENVELOPE>
+  <HEADER>
+    <TALLYREQUEST>Import Data</TALLYREQUEST>
+  </HEADER>
+  <BODY>
+    <IMPORTDATA>
+      <REQUESTDESC>
+        <REPORTNAME>All Masters</REPORTNAME>
+      </REQUESTDESC>
+      <REQUESTDATA>
+        <TALLYMESSAGE xmlns:UDF="TallyUDF"> 
+          
+            
+          <VOUCHER REMOTEID="20180226-05-00000000006" VCHTYPE ="Journal" ACTION ="Create" OBJVIEW="Accounting Voucher View">  
+            
+            <DATE>20170701</DATE>            
+            <VOUCHERTYPENAME>Journal</VOUCHERTYPENAME>
+            <VOUCHERNUMBER>50</VOUCHERNUMBER>
+            
+            
+            <PARTYLEDGERNAME>BRA01</PARTYLEDGERNAME>
+            <PERSISTEDVIEW>Accounting Voucher View</PERSISTEDVIEW>
+            
+            
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>BRA01</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+              <AMOUNT>-9200</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+            
+            
+            
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>11</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>9000</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+  
+            <ALLLEDGERENTRIES.LIST>
+              <LEDGERNAME>33</LEDGERNAME>
+              <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+              <AMOUNT>200</AMOUNT>
+            </ALLLEDGERENTRIES.LIST>
+            
+          </VOUCHER>
+           
+        </TALLYMESSAGE>
+      </REQUESTDATA>
+    </IMPORTDATA>
+  </BODY>
+</ENVELOPE>

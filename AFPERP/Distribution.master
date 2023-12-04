@@ -1,0 +1,316 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Distribution.master.cs" Inherits="BLL.Distribution" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SidebarContent" runat="server">
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="DistributionHome.aspx">
+                        <i class="icon-dashboard"></i>
+                        <span>Distribution Dashboard</span>
+                    </a>
+                </li>
+                <!--Report menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Reports</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Chalan</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentStatement">Agent Statement</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_AgentBooksChallan">Agent Books Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BookChallanDetail">Book  Detail challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseBookChallan">Datewise Book Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Store_Rpt_DatewiseStockReceive.aspx">Datewise Stock Receive Report</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Deposit</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DepositeReport">Deposit Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseDeposite">Datewise Deposit</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Return</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseReturn">Datewise Return</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseBooksReturn">Datewise Books Return</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ReturnByMemoNo.aspx">Return Books By Memo No</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_ReturnByMemoQaumi.aspx">Return Qawmi Books By Memo No</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Specimen</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanAdjustmentMemo.aspx">Specimen Adjust Memo</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TsowiseTransaction">TSO Statement</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanChallanByBookId">Bookwise Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_TsowiseChallanQty">Tsowise Challan Qty</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_SpecimanSummary">Specimen Summary</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseSpecimanChallan">Datewise Challan</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseSpecimanReturn">Datewise Return</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="SpecimenAdjustmentLetter">Specimen Adjustment Letter</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseSpecimenAdjustmentLetter">Datewise Adjustment Letter</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Stock</span>
+                            </a>
+                            <ul class="sub">
+                                <%--<li class="sub-menu">
+                                    <a href="Mkt_Rpt_StockSummary">Stock Summary</a>
+                                </li>--%>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_StockDetails.aspx">Books Stock Details</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Store_Rpt_CentralStockInventory.aspx">Central Stock Inventory</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_StockReturnDetails.aspx">Return Stock Details</a>
+                                </li>
+                                <%-- <li class="sub-menu">
+                                    <a href="Mkt_Rpt_DatewiseInventory.aspx">Datewise Inventory</a>
+                                </li>--%>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>Book</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BookList.aspx">Book List</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Mkt_Rpt_BookPriceList.aspx">Book Price List</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                <span>BindingReport</span>
+                            </a>
+                            <ul class="sub">
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewiseBookReceive">DateWise Receive</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_BookWiseReport">BookWise Report</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_BinderWiseReport">Binderwise Report</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewiseGodownWithRequsition">Datewise Recv With Req. </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-sitemap"></i>
+                            <span>Book</span>
+                        </a>
+                        <ul class="sub">
+                            <li class="sub-menu">
+                                <a href="#">New Book</a>
+                            </li>
+                        </ul>
+                    </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Deposit</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="MktCollectionDeposit">New Deposit</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Challan menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Chalan</span>
+                    </a>
+                    <ul class="sub">                        
+                        <li class="sub-menu">
+                            <a href="MktNewChalanByOrder">Challan By Order</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">New Chalan</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Dist_UpdateChalanPacket.aspx">Update Packet</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_UpdateChallanQty">Update Chalan</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="Dist_DailyPackingCost.aspx">Daily Packing Cost</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="#">Internal Transfer</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Delivery Bill</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Qawmi Chalan </a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Dist_InvoiceSummary">Invoice Summary</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Dis_PacketBookingSlip">Booking Slip</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--Challan menu End-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Return</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="#">New Return</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Dist_CancelReturn.aspx">Cancel Return</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Speciman</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Mkt_SpecimanChalan.aspx">New Speciman</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_DeleteSpeciman.aspx">Cancel Speciman</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_SPCAdjustment.aspx">Speciman Adjustment</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="#">Internal Speciman</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Mkt_SpecimanReturn.aspx">Return Speciman</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Sutrapur Lamination</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="#">Supplier Info</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_SutrapurLamiGodwRcv.aspx">Stock Receive</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_SutrapurLami_ItemChallan">Item Challan</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_Datewise_SutrapurLami_Stock">Stock Report</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!--sidebar end-->
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <p class="page-heading"><span>Distribution Department</span></p>
+    <asp:ContentPlaceHolder ID="DistributionContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="RequiredJS" runat="server">
+    <asp:ContentPlaceHolder ID="RequiredJSDistribution" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

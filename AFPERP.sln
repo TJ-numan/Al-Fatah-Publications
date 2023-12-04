@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFPERP", "AFPERP\AFPERP.csproj", "{4E9C0727-BA23-4BA3-8853-C7C9725F4C9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{979E3B8B-BF55-4461-9E64-92F7A0B38CDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{D0FA86F3-EDA6-4339-AD86-924FD0124FF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{989746EF-E8C1-44C5-9274-A65970357B95}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://mis4:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AFPERP\\AFPERP.csproj
+		SccProjectName1 = AFPERP
+		SccLocalPath1 = AFPERP
+		SccProjectUniqueName2 = BLL\\BLL.csproj
+		SccProjectName2 = BLL
+		SccLocalPath2 = BLL
+		SccProjectUniqueName3 = Common\\Common.csproj
+		SccProjectName3 = Common
+		SccLocalPath3 = Common
+		SccProjectUniqueName4 = DAL\\DAL.csproj
+		SccProjectName4 = DAL
+		SccLocalPath4 = DAL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E9C0727-BA23-4BA3-8853-C7C9725F4C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E9C0727-BA23-4BA3-8853-C7C9725F4C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E9C0727-BA23-4BA3-8853-C7C9725F4C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E9C0727-BA23-4BA3-8853-C7C9725F4C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979E3B8B-BF55-4461-9E64-92F7A0B38CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979E3B8B-BF55-4461-9E64-92F7A0B38CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979E3B8B-BF55-4461-9E64-92F7A0B38CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979E3B8B-BF55-4461-9E64-92F7A0B38CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0FA86F3-EDA6-4339-AD86-924FD0124FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0FA86F3-EDA6-4339-AD86-924FD0124FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0FA86F3-EDA6-4339-AD86-924FD0124FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0FA86F3-EDA6-4339-AD86-924FD0124FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{989746EF-E8C1-44C5-9274-A65970357B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{989746EF-E8C1-44C5-9274-A65970357B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{989746EF-E8C1-44C5-9274-A65970357B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{989746EF-E8C1-44C5-9274-A65970357B95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

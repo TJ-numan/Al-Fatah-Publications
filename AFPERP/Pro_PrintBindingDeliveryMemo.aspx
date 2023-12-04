@@ -1,0 +1,37 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ProductionMaster.master" AutoEventWireup="true" CodeBehind="Pro_PrintBindingDeliveryMemo.aspx.cs" Inherits="BLL.Pro_PrintBindingDeliveryMemo" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ProductionContent" runat="server">
+    <div class="form-horizontal clearfix" runat="server">
+        <div class="panel-body" style="border: 1px solid #BDC3CA">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                   Book Binding Order Print
+                </div>
+                
+                <div class="panel-body">
+                    <div class="col-md-12 no-padding clearfix">
+                        <div class="col-md-6 clearfix">
+                            <div class="form-group">
+                                <asp:Label runat="server" AssociatedControlID="txtDeliveryMemo" CssClass="col-xs-4 control-label no-padding-right" Text="Delivery No"></asp:Label>
+                                <div class="col-xs-8">
+                                    <asp:TextBox ID="txtDeliveryMemo" runat="server" CssClass="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-8 col-xs-offset-4">
+                                    <asp:Button ID="btnShow" Text="Show" CssClass="btn btn-info" runat="server" OnClick="btnShow_Click"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="RequiredJSPro" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            open_menu("Binding");
+        });
+    </script>
+</asp:Content>

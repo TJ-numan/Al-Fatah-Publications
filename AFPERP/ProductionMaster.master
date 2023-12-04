@@ -1,0 +1,422 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductionMaster.master.cs" Inherits="BLL.ProductionMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SidebarContent" runat="server">
+
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li>
+                    <a href="ProHome">
+                        <i class="icon-dashboard"></i>
+                        <span>Production Dashboard</span>
+                    </a>
+                </li>
+
+                <!--multi level menu start-->
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Reports</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Pro_Rpt_BookPriceList">Book Price List</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Pesting</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewisePestingReport">Datewise Pesting</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Paper Supplier</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_SupplierBill">Supplier Bill</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PaperDelivery">Paper Delivery</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_SupplierStatement">Supplier Statement</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Press</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewisePaperDeliveryReport">Paper Delivery</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PaperStock">Paper Stock</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DateWiseDetailStock">Detail Stock</a>
+                                </li> 
+
+                                <li class="sub-menu">
+                                    <a href="#">Press Statement</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PrintOrderReport">Print Order Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PaperActualUsed">Paper Actual Used</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Print</span>
+                            </a>
+                            <ul class="sub">
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewiseRequisition">Datewise Requisition</a>
+                                </li> 
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewisePrintReport">DateWise Print Details</a>
+                                </li> 
+                                
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewisePrintReport_R2">DateWise Print</a>
+                                </li> 
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_BookPrintReport">Printing Summary Report</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_RptDatewiseBookWisePrintReqVSReceived">Print Req Vs GodownRcv</a>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Plate</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PlatePurchaseOrder">Purchase</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PlateProcessOrder">Process</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PlateReturnTransfer">Plate Return</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_RptPlatePurchase">Plate Purchase Report</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_PrintDatewiseDamagePlate">Datewise Damage Plate</a>
+                                </li>   
+                                <li class="sub-menu">
+                                    <a href="Pro_PrintDamageByMemo">Damage Plate by Memo</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_PlateStock">Plate Stock Report</a>
+                                </li>                                                         
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Lemination</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_LeminationChallanMemo">Lemi Challan Memo</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="#">Lemi Datewise Challan</a>
+                                </li>
+                            <%--    <li class="sub-menu">
+                                    <a href="Pro_Rpt_PlateReturnTransfer">Plate Return</a>
+                                </li>--%>
+                            </ul>
+
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>Cover</span>
+                            </a>
+                            <ul class="sub">
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_GodownCoverReceivingMemo">Cover Receive Memo</a>
+                                </li>
+<%--                                <li class="sub-menu">
+                                    <a href="#">Lemi Datewise Challan</a>
+                                </li>--%>
+                            </ul>
+
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <span>BindingReport</span>
+                            </a>
+                            <ul class="sub">
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewiseBookReceive">DateWise Receive</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_BookWiseReport">BookWise Report</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_BinderWiseReport">Binderwise Report</a>
+                                </li>
+
+                                <li class="sub-menu">
+                                    <a href="Pro_Rpt_DatewiseGodownWithRequsition">Datewise Recv With Req. </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Pasting</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Pro_PastingPartyInfo">Party Info</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PastingOrder">Pasting Order</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PestingPrint.aspx">Pasting Report by EntryNo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Paper</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Pro_PaperParty">Paper Party</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PaperPurchase">Purchase Order</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PaperDelivery">Paper Delivery</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PaperTransfer">Paper Transfer</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PaperReturn">Paper Return</a>
+                        </li>
+                         <li class="sub-menu">
+                            <a href="Pro_PrintPaperReturn">Paper Return by Memo</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_printDatewisepaperReturn">Datewise Paper Return</a>
+                        </li>
+                                               
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Printing</span>
+                    </a>
+                    <ul class="sub">
+
+                        <li class="sub-menu">
+                            <a href="Pro_PressInfo">Press Info</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PrintOrderForma">Forma Print Order</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PrintOrderCover">Cover Print Order</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PrintBill">Print Bill</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_ActualPaperUsed">Actual Used Paper</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Plate</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Pro_PlateParty">Purchase Party Info</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlateProcessParty">Process Party Info</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlateSupply">Plate Supply</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlatePurchase">Plate Purchase</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlateProcess">Plate Process</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlateReturn">Plate Return</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlatePurchaseBill">Plate Purchase Bill</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlateProcessBill">Plate Process Bill</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_DamagePlateChallan">Damage Plate Entry</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlateTransfer">Plate Transfer</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlateDamageStockEntry">Damage Plate Stock</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Lamination</span>
+                    </a>
+                    <ul class="sub">
+
+                        <li class="sub-menu">
+                            <a href="Pro_LaminationParty">Party Info</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="Pro_LemiChallan">Lamination Challan</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_LaminationOrder">Lamination Order</a>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="Pro_LaminationSizeBasic">Lamination Size</a>
+                        </li>
+                 
+
+                        <li class="sub-menu">
+                            <a href="Pro_PrintLaminationOrder">Print Lamination Order</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Lamination Bill</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Binding</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Pro_BinderInfo">Binder Information</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_BindingDelivery">Binding Delivery</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_BindingOrder">Binding Order</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_ReturnFromBinder">Return From Binder</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_BinderBill">Binder Bill</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Basic Setting</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Pro_BookBasicInfo">Book</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PlateBasicInfo">Plate</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="#">Paper</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PrintBasic">Print</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_PestingLemination">Pesting & Lemination</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                        <i class="icon-sitemap"></i>
+                        <span>Cover</span>
+                    </a>
+                    <ul class="sub">
+                        <li class="sub-menu">
+                            <a href="Pro_CoverSupplierInfo">Supplier Info</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_CoverReceive">Cover Receive</a>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="Pro_CoverBill">Bill</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--multi level menu end-->
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <p class="page-heading"><span>Production Department</span></p>
+    <asp:ContentPlaceHolder ID="ProductionContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="RequiredJS" runat="server">
+    <asp:ContentPlaceHolder ID="RequiredJSPro" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
